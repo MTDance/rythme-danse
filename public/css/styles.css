@@ -1,0 +1,45 @@
+/****
+* Affichage de la bare de progression
+*/
+#progress{
+    background-color: yellow;
+    height: 3px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/* footer */
+footer>div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer>div p {
+    margin-top: 20px;
+}
+
+footer>div i {
+    font-size: 3.5em;
+    margin-left: 20px;
+}
+
+footer>div a:nth-child(1) {
+    color: #046ee5
+}
+
+footer>div a:nth-child(2) {
+    color: #1da1f2;
+}
+
+footer>div a:nth-child(3) {
+    color: #934bc8;
+}
+
+footer>div a:nth-child(4) {
+    color: #ff0000;
+}
