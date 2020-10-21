@@ -17,4 +17,5 @@ window.onload = () => {
         // Modification du CSS de la barre
         document.getElementById("progress").style.width = barre+"px"
     })
-}
+} // Fin window.onload
+
