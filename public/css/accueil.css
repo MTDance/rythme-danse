@@ -1,0 +1,23 @@
+/*
+* body
+*/
+.presentation{
+    border: 2px solid #3b8971;
+    border-radius: 10px;
+    box-shadow: 1px 3px 1px 3px #3b8971;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+}

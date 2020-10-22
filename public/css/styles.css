@@ -11,6 +11,32 @@
     z-index: 9999;
 }
 
+#navbarNavDropdown{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+nav{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h1{
+    font-size: 6em;
+    text-align: center;
+    position: relative;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: cursive;
+    text-align: center;
+}
+
+
 /* footer */
 footer>div {
     display: flex;

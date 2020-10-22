@@ -1,9 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Rythme Danse{% endblock %}
-
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/accueil.css') }}"> {% endblock %}
 {% block body %}
 
-    <img class="image_accueil" src="{{ asset('assets/images/danseuse_violette.jpg') }}" alt="danseuse violette">
+<div class="presentation">
+    <h2>Présentation de l'association</h2>
+
+    <p>L'association Rythme Danse a été créer en 1590 par Martine Farnault qui  a eu l'opportunité de se faire connaitre par beacoup de danseurs notamment Minh-Tuan qui est formé par Serge de Serial Stepperz gagnant de la juste debout 2018</p>
+</div>
 {% endblock %}
 
