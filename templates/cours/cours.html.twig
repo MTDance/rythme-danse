@@ -2,72 +2,95 @@
 
 {% block title %}Hello CoursController!{% endblock %}
 
+    {% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
 {% block body %}
-<style></style>
 
 <!-- A mettre h1 et p dans un border -->
-<div class="en_tete">
-<h1>Cours</h1>
-<p>Vous trouverez les différents cours proposés par l'associasion</p>
+<div>
+    <h1>Cours</h1>
+    <p>Vous trouverez les différents cours proposés par l'association</p>
 </div>
 
-    <div class="container">
-        <div class="row justify-content-around-sm">
-            <div class="col-md-4">
-                <h1>Eveil Corporel</h1>
+    <div class="cours">
+        <section>
+            <div>
                 <img src="" alt="">
-                <button class="justify-content-center"><a class="dropdown-item" href="{{ path('eveil') }}">Description</a></button>
             </div>
-            <div class="col-md-4 ml-auto">
-                <h1>Classique et pointes</h1>
+            <article>
+                <h2>Classique et pointes</h2>
+                <button><a class="dropdown-item" href="{{ path('classique') }}">Description</a></button>
+            </article>
+        </section>
+
+        <section>
+            <div>
                 <img src="" alt="">
-                <button class="justify-content-center"><a class="dropdown-item" href="{{ path('classique') }}">Description</a></button>
             </div>
-        </div>
-        <div class="row justify-content-around-sm">
-            <div class="col-md-4">
-                <h1>Contemporain</h1>
-                <img src="" alt="">
+            <article>
+                <h2>Contemporain</h2>
                 <button><a class="dropdown-item" href="{{ path('contemporain') }}">Description</a></button>
-            </div>
-            <div class="col-md-4 ml-auto">
-                <h1>Modern Jazz</h1>
-                <img src="" alt="">
-                <button><a class="dropdown-item" href="{{ path('modern') }}">Description</a></button>
-            </div>
-        </div>
-        <div class="row justify-content-around-sm">
-            <div class="col-md-4">
-                <h1>FTP</h1>
-                <img src="" alt="">
-                <button><a class="dropdown-item" href="{{ path('ftp') }}">Description</a></button>
-            </div>
-            <div class="col-md-4 ml-auto">
-                <h1>Fly Yoga</h1>
-                <img src="" alt="">
-                <button><a class="dropdown-item" href="{{ path('yoga') }}">Description</a></button>
-            </div>
-        </div>
-        <div class="row justify-content-around-sm">
-            <div class="col-md-4">
-                <h1>Ragga</h1>
-                <img src="" alt="">
-                <button><a class="dropdown-item" href="{{ path('ragga') }}">Description</a></button>
-            </div>
-            <div class="col-md-4 ml-auto">
-                <h1>TBC Avalanche</h1>
-                <img src="" alt="">
-                <button><a class="dropdown-item" href="{{ path('tbc') }}">Description</a></button>
-            </div>
-        </div>
-        <div class="row justify-content-around-sm">
-            <div class="col-md-4">
-                <h1>Hip-Hop</h1>
-                <img src="" alt="">
-                <button><a class="dropdown-item" href="{{ path('hip_hop') }}">Description</a></button>
-            </div>
-        </div>
+            </article>
+        </section>
     </div>
 
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <article>
+                <h2>Modern Jazz</h2>
+                <button><a class="dropdown-item" href="{{ path('modern') }}">Description</a></button>
+            </article>
+        </section>
 
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <article>
+                <h2>FTP</h2>
+                <button><a class="dropdown-item" href="{{ path('ftp') }}">Description</a></button>
+            </article>
+        </section>
+
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <article>
+                <h2>Fly Yoga</h2>
+                <button><a class="dropdown-item" href="{{ path('yoga') }}">Description</a></button>
+            </article>
+        </section>
+
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <article>
+                <h2>Ragga</h2>
+                <button><a class="dropdown-item" href="{{ path('ragga') }}">Description</a></button>
+            </article>
+        </section>
+
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <article>
+                <h2>TBC Avalanche</h2>
+                <button><a class="dropdown-item" href="{{ path('tbc') }}">Description</a></button>
+            </article>
+        </section>
+
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <article>
+                <h2>Hip-Hop</h2>
+                <button><a class="dropdown-item" href="{{ path('hip_hop') }}">Description</a></button>
+            </article>
+        </section>
+    </div>
 {% endblock %}

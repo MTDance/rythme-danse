@@ -1,0 +1,36 @@
+/*
+* Page principal pour les cours
+*/
+section {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #612800;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 6px 6px 6px black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+article{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.button{
+    text-align: center;
+}
+
+.cours{
+    display:flex;
+    justify-content: space-around;
+}
+/*
+* Page pour le cours de classique
+*/
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
