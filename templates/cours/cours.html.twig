@@ -29,6 +29,7 @@
         </section>
     </div>
 
+    <div class="cours">
         <section>
             <article>
             <img src="{{ asset('assets/images/modern_jazz.png') }}" alt="modern_jazz">
@@ -38,15 +39,17 @@
         </section>
 
         <section>
-            <div>
-                <img src="" alt="">
-            </div>
             <article>
-                <h2>FTP</h2>
-                <button><a class="dropdown-item" href="{{ path('ftp') }}">Description</a></button>
+            <img src="{{ asset('assets/images/hip_hop.png') }}" alt="hip_hop">
+                <h2>Hip-Hop</h2>
+                <button><a class="dropdown-item" href="{{ path('hip_hop') }}">Description</a></button>
             </article>
         </section>
 
+        
+    </div>
+
+    <div class="cours">
         <section>
             <article>
                 <img src="{{ asset('assets/images/yoga.png') }}" alt="yoga">
@@ -62,7 +65,9 @@
                 <button><a class="dropdown-item" href="{{ path('ragga') }}">Description</a></button>
             </article>
         </section>
+    </div>
 
+    <div class="cours">
         <section>
             <div>
                 <img src="" alt="">
@@ -74,11 +79,14 @@
         </section>
 
         <section>
+            <div>
+                <img src="" alt="">
+            </div>
             <article>
-            <img src="{{ asset('assets/images/hip_hop.png') }}" alt="hip_hop">
-                <h2>Hip-Hop</h2>
-                <button><a class="dropdown-item" href="{{ path('hip_hop') }}">Description</a></button>
+                <h2>FTP</h2>
+                <button><a class="dropdown-item" href="{{ path('ftp') }}">Description</a></button>
             </article>
         </section>
     </div>
+
 {% endblock %}
