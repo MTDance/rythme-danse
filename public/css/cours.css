@@ -23,9 +23,8 @@ article{
     text-align: center;
 }
 
-.button{
+button{
     text-align: center;
-    border: 2px 2px 2px 2px;
 }
 
 .cours{
@@ -38,4 +37,11 @@ article{
 p{
     margin-left: 20px;
     margin-right: 20px;
+}
+
+@media all and (max-width: 800px){
+    section{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
