@@ -1,18 +1,28 @@
 /*
 * Page principal pour les cours
 */
+.card{
+    background-color: #8A3C54;
+}
 
+button{
+    border-radius: 20px;
+    background-color: rgb(232, 235, 251);
+}
+.dropdown-item{
+    font-family: 'Berkshire Swash', cursive;
+}
 
 /*
 * Page pour le cours de classique
 */
-p{
-    margin-left: 20px;
-    margin-right: 20px;
+
+h2{
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(232, 235, 251);
 }
 
-@media all and (max-width: 1024px){
-    .cours{
-        flex-wrap: wrap;
-    }
+p{
+    margin-left: 100px;
+    margin-right: 100px;
 }
