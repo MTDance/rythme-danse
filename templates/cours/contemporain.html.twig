@@ -1,16 +1,22 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Rythme Danse{% endblock %}
-
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
 {% block body %}
 
-<img src="{{ asset('assets/images/contemporain.png') }}" alt="contemporain">
-
-    <div class="mx-auto mt-4" style="width: 200px;">
-        <h2>CONTEMPORAIN</h2>
+<div class="cardi mb-2 mx-auto">
+  <div class="row">
+    <div class="col mt-5">
+        <img src="{{ asset('assets/images/contemporain.png') }}" alt="classique">
     </div>
-
-    <p>Apparue en Europe et aux Etats-Unis après la Seconde Guerre mondiale, la danse contemporaine suit l'apparition de la danse moderne et constitue un style de danse plus libre.</p>
-    <p>La danse contemporaine emprunte les techniques aux courants modernes ou classiques, les actualise ou les détourne, les métisse et crée des passerelles avec d'autres disciplines artistiques.</p>
-    <p>Chaque enseignant développe son propre style, mélangeant ses touches personnelles et techniques acquises dans les autres disciplines, principalement classique et modern jazz chez Isabelle, et ouvre à un univers d'expression corporelle et d'interprétation absolue.</p>
+    <div class="col mr-5">
+      <div class="card-body">
+        <h2>Contemporain</h2>
+        <p class="card-text">Apparue en Europe et aux Etats-Unis après la Seconde Guerre mondiale, la danse contemporaine suit l'apparition de la danse moderne et constitue un style de danse plus libre.</p>
+        <p class="card-text">La danse contemporaine emprunte les techniques aux courants modernes ou classiques, les actualise ou les détourne, les métisse et crée des passerelles avec d'autres disciplines artistiques.</p>
+        <p class="card-text">Chaque enseignant développe son propre style, mélangeant ses touches personnelles et techniques acquises dans les autres disciplines, principalement classique et modern jazz chez Isabelle, et ouvre à un univers d'expression corporelle et d'interprétation absolue.</p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

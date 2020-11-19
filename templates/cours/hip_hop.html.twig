@@ -1,28 +1,35 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Rythme Danse{% endblock %}
-
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
 {% block body %}
-<img src="{{ asset('assets/images/hip_hop.png') }}" alt="hip_hop">
 
-    <div class="mx-auto mt-4 " style="width: 200px;">
-        <h2>HIP-HOP</h2>
+
+<div class="cardi mb-3 mx-auto">
+  <div class="row">
+    <div class="col mt-5">
+        <img src="{{ asset('assets/images/hip_hop.png') }}" alt="hip_hop">
     </div>
-
-    <p>Le hip hop est un mouvement culturel et artistique apparu aux USA au début des années 1970. Issu des ghettos newyorkais, il est marqué par une forte volonté de contestation sociale mais aussi par un esprit festif . Il s'inspire en partie du funk style : locking, popping et boogaloo. Cette danse regroupe le break (sol), le lock, le pop, le boogaloo, la house, le new style et le krump. Elle nécessite et développe des qualités physiques telle que la souplesse, la force, la coordination mais également une bonne oreille musicale et du feeling.</p>
-
-    <ul>
-        <div class="mx-auto mt-4" style="width: 200px;">
-            <h2>Cours Ados / Adultes</h2>
-        </div>
-        <li>Tchad propose des cours orientés chorégraphie, en utilisant les énergies popping, locking et streetjazz.</li>
-    </ul>
-    
-    <ul>
-        <div class="mx-auto mt-4 " style="width: 200px;">
-            <h2>Cours enfants / battle </h2>
-        </div>
-        <li>Ces cours sont orientés freestyle. Les bases du hip hop sont inculquées tout en introduisant les notions d'improvisation et de créations spontanées.</li>
-    </ul>
-
+    <div class="col mr-5">
+      <div class="card-body">
+        <h2>Hip-Hop</h2>
+        <p class="card-text">Le hip hop est un mouvement culturel et artistique apparu aux USA au début des années 1970. Issu des ghettos newyorkais, il est marqué par une forte volonté de contestation sociale mais aussi par un esprit festif . Il s'inspire en partie du funk style : locking, popping et boogaloo. Cette danse regroupe le break (sol), le lock, le pop, le boogaloo, la house, le new style et le krump. Elle nécessite et développe des qualités physiques telle que la souplesse, la force, la coordination mais également une bonne oreille musicale et du feeling.</p>
+        <p class="card-text">En effet, elle exige de la souplesse mais aussi un contrôle de son corps afin d’avoir des gestes et des déplacements précis, et pouvoir communiquer l'émotion que l'on souhaite partager.</p>
+        <ul>
+            <div class="mx-auto mt-4" style="width: 200px;">
+                <h2>Cours Ados / Adultes</h2>
+            </div>
+            <li>Tchad propose des cours orientés chorégraphie, en utilisant les énergies popping, locking et streetjazz.</li>
+        </ul>
+        
+        <ul>
+            <div class="mx-auto mt-4 " style="width: 200px;">
+                <h2>Cours enfants / battle </h2>
+            </div>
+            <li>Ces cours sont orientés freestyle. Les bases du hip hop sont inculquées tout en introduisant les notions d'improvisation et de créations spontanées.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
