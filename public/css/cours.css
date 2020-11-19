@@ -9,6 +9,7 @@ button{
     border-radius: 20px;
     background-color: rgb(232, 235, 251);
 }
+
 .dropdown-item{
     font-family: 'Berkshire Swash', cursive;
 }
@@ -16,11 +17,17 @@ button{
 /*
 * Page pour le cours de classique
 */
+.cardi{
+    background-color: #3c8a72;
+}
 
 h2{
     font-family: 'Berkshire Swash', cursive;
     color: rgb(232, 235, 251);
+    text-align: center;
+    margin-top: 20px;
 }
+
 
 p{
     color: white;
