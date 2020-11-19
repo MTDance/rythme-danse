@@ -1,84 +1,75 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CoursController!{% endblock %}
-
-    {% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
+{% block title %}Rythme Danse{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
 {% block body %}
 
     <h1>Cours</h1>
-   
-    <div class="cours">
-        <section>
-            <article>
+
+        <div class="row row-cols-1 row-cols-md-3 mx-auto">
+            <div class="col mb-4 ">
+                <div class="card">
                 <img src="{{ asset('assets/images/classique.png') }}" alt="classique">
-                <h2>Classique et pointes</h2>
-                <button><a class="dropdown-item" href="{{ path('classique') }}">Description</a></button>
-            </article>
-        </section>
-
-        <section>
-            <article>
+                    <div class="card-body mx-auto">
+                        <h5 class="card-title ">Classique et pointes</h5>
+                        <button><a class="dropdown-item" href="{{ path('classique') }}">Description</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
                 <img src="{{ asset('assets/images/contemporain.png') }}" alt="contemporain">
-                <h2>Contemporain</h2>
-                <button><a class="dropdown-item" href="{{ path('contemporain') }}">Description</a></button>
-            </article>
-        </section>
-    </div>
-
-    <div class="cours">
-        <section>
-            <article>
-            <img src="{{ asset('assets/images/modern_jazz.png') }}" alt="modern_jazz">
-                <h2>Modern Jazz</h2>
-                <button><a class="dropdown-item" href="{{ path('modern') }}">Description</a></button>
-            </article>
-        </section>
-
-        <section>
-            <article>
-            <img src="{{ asset('assets/images/hip_hop.png') }}" alt="hip_hop">
-                <h2>Hip-Hop</h2>
-                <button><a class="dropdown-item" href="{{ path('hip_hop') }}">Description</a></button>
-            </article>
-        </section>
-
-        
-    </div>
-
-    <div class="cours">
-        <section>
-            <article>
+                <div class="card-body mx-auto">
+                    <h5 class="card-title">Contemporain</h5>
+                    <button><a class="dropdown-item" href="{{ path('contemporain') }}">Description</a></button>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                <img src="{{ asset('assets/images/modern_jazz.png') }}" alt="modern_jazz">
+                <div class="card-body mx-auto">
+                    <h5 class="card-title">Modern Jazz</h5>
+                    <button><a class="dropdown-item" href="{{ path('modern') }}">Description</a></button>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                <img src="{{ asset('assets/images/hip_hop.png') }}" alt="hip_hop">
+                <div class="card-body mx-auto">
+                    <h5 class="card-title">Hip-Hop</h5>
+                    <button><a class="dropdown-item" href="{{ path('hip_hop') }}">Description</a></button>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
                 <img src="{{ asset('assets/images/yoga.png') }}" alt="yoga">
-                <h2>Fly Yoga</h2>
-                <button><a class="dropdown-item" href="{{ path('yoga') }}">Description</a></button>
-            </article>
-        </section>
-
-        <section>
-            <article>
-            <img src="{{ asset('assets/images/ragga.png') }}" alt="ragga">
-                <h2>Ragga</h2>
-                <button><a class="dropdown-item" href="{{ path('ragga') }}">Description</a></button>
-            </article>
-        </section>
-    </div>
-
-    <div class="cours">
-        <section>
-            <article>
+                <div class="card-body mx-auto">
+                    <h5 class="card-title">Fly Yoga</h5>
+                    <button><a class="dropdown-item" href="{{ path('yoga') }}">Description</a></button>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                <img src="{{ asset('assets/images/ragga.png') }}" alt="ragga">
+                <div class="card-body mx-auto">
+                        <h5 class="card-title mx-auto">Ragga</h5>
+                    <button><a class="dropdown-item" href="{{ path('ragga') }}">Description</a></button>
+                </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
                 <img src="{{ asset('assets/images/logo_accueil.png') }}" alt="ftp">
-                <h2>TBC Avalanche</h2>
-                <button><a class="dropdown-item" href="{{ path('tbc') }}">Description</a></button>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <img src="{{ asset('assets/images/logo_accueil.png') }}" alt="ftp">
-                <h2>FTP</h2>
-                <button><a class="dropdown-item" href="{{ path('ftp') }}">Description</a></button>
-            </article>
-        </section>
-    </div>
-
+                <div class="card-body mx-auto">
+                    <h5 class="card-title">TBC Avalanche</h5>
+                    <button><a class="dropdown-item" href="{{ path('tbc') }}">Description</a></button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
 {% endblock %}

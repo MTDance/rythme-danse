@@ -2,17 +2,13 @@
 * Affichage de la bare de progression
 */
 #progress{
-    background-color: rgb(42, 42, 44);
+    background-color: rgb(49, 182, 89);
     height: 3px;
     width: 0;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-}
-
-body{
-    background-color: #FCFCF8;
 }
 
 html{

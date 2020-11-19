@@ -2,9 +2,9 @@
 * body
 */
 .presentation{
-    border: 2px solid #3b8971;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px 3px #3b8971;
+    border: 2px solid #94becf;
+    border-radius: 10px 2px 10px 2px;
+    box-shadow: 1px 1px 1px 1px #94becf;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;

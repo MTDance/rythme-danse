@@ -1,7 +1,9 @@
 h2{
     text-align: center;
 }
-
+/**
+*   Page Equipe Artistique
+*/
 .prof{
     width: 100%;
     height: 100%;
@@ -18,9 +20,12 @@ h2{
 /**
 *   Page Equipe Administratif
 */
-.card-body{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.card{
+    text-align: center;
+}
+
+.la-user-tie{
+    font-size: 10em;
 }
 
 @media all and (max-width: 800px){
