@@ -2,7 +2,7 @@
 * Affichage de la bare de progression
 */
 #progress{
-    background-color: #8A3C54;
+    background-color: #d2dd3a;
     height: 3px;
     width: 0;
     position: fixed;
