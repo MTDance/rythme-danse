@@ -25,7 +25,8 @@ h2{
     font-family: 'Berkshire Swash', cursive;
     color: rgb(232, 235, 251);
     text-align: center;
-    margin-top: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 

@@ -11,14 +11,20 @@
     padding-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 h2{
+    font-family: 'Berkshire Swash', cursive;
     text-align: center;
-    text-transform: capitalize;
+    color: white;
+    margin-bottom: 20px
 }
 
 p{
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: auto;
+    margin-bottom:auto;
+    color: white;
 }
