@@ -2,7 +2,7 @@
 * Affichage de la bare de progression
 */
 #progress{
-    background-color: rgb(49, 182, 89);
+    background-color: #8A3C54;
     height: 3px;
     width: 0;
     position: fixed;
@@ -33,7 +33,7 @@ nav{
 }
 
 img{
-    width: 100%;
+    width: 60%;
     height: 60%;
     display: block;
     margin-right: auto;

@@ -1,16 +1,23 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Rythme Danse{% endblock %}
-
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
 {% block body %}
-<img src="{{ asset('assets/images/yoga.png') }}" alt="yoga">
 
-    <div class="mx-auto mt-4" style="width: 200px;">
-        <h2>FLY YOGA (Yoga aérien)</h2>
+<div class="cardi mb-3 mx-auto">
+  <div class="row">
+    <div class="col mt-5">
+        <img src="{{ asset('assets/images/yoga.png') }}" alt="yoga">
     </div>
-
-    <p>Désormais le yoga se pratique dans les airs. Dans un tissu spécifique accroché à un portique ou au plafond, explorez les trois dimensions.</p>
-    <p>Découvrez le yoga aérien, subtile fusion du yoga, notamment les branches hatha yoga et asthanga yoga, du fitness et des arts du cirque.</p>
-    <p>Enseignante et formatrice en danse, pratiquante expérimentée de la branche asthanga yoga et artiste trapéziste de longue date, Isabelle Farnault propose une synthèse de ses expériences et de sa recherche dans la fusion des styles.</p>
-    <p>Accessible à tous, le yoga aérien est axé sur l'équilibre, la proprioception, le gainage et l'assouplissement. Il permet aussi bien de travailler le renforcement musculaire que les étirements et s’inscrit tant dans une pratique sportive classique ou adaptée, en raison de ses vertus thérapeutiques, que dans la recherche d’une véritable démarche d’hygiène de vie.</p>
+    <div class="col mr-5">
+      <div class="card-body">
+        <h2>Fly Yoga</h2>
+        <p class="card-text">Désormais le yoga se pratique dans les airs. Dans un tissu spécifique accroché à un portique ou au plafond, explorez les trois dimensions.</p>
+        <p class="card-text">Découvrez le yoga aérien, subtile fusion du yoga, notamment les branches hatha yoga et asthanga yoga, du fitness et des arts du cirque.</p>
+        <p class="card-text">Enseignante et formatrice en danse, pratiquante expérimentée de la branche asthanga yoga et artiste trapéziste de longue date, Isabelle Farnault propose une synthèse de ses expériences et de sa recherche dans la fusion des styles.</p>
+        <p class="card-text">Accessible à tous, le yoga aérien est axé sur l'équilibre, la proprioception, le gainage et l'assouplissement. Il permet aussi bien de travailler le renforcement musculaire que les étirements et s’inscrit tant dans une pratique sportive classique ou adaptée, en raison de ses vertus thérapeutiques, que dans la recherche d’une véritable démarche d’hygiène de vie.</p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
