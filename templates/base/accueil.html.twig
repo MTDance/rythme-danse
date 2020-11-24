@@ -4,6 +4,10 @@
 {% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/accueil.css') }}">{% endblock %}
 {% block body %}
 
+    {% for message in app.flashes('success') %}
+                <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+
 <div class="presentation">
     <h2 class="mx-auto">Présentation de l'association</h2>
 
