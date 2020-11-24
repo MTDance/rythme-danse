@@ -4,11 +4,13 @@
 {% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/accueil.css') }}">{% endblock %}
 {% block body %}
 
-    {% for message in app.flashes('success') %}
-                <div class="alert alert-success" role="alert">{{ message }}</div>
-    {% endfor %}
+    
 
 <div class="presentation">
+    {% for message in app.flashes('success') %}
+                    <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+    
     <h2 class="mx-auto">Présentation de l'association</h2>
 
     <p>La cohésion, l'aventure, le dépassement de soi, le don de soi sont les maîtres mots de notre association.</p>
