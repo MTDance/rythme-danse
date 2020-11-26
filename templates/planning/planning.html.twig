@@ -2,13 +2,13 @@
 
 {% block title %}Rythme Danse{% endblock %}
 
-{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/planning.css') }}">{% endblock %}
+{% block stylesheets %}{% endblock %}
 
 {% block body %}
 <h1>Planning de l'année</h1>
 
-    <div>
-        <a href="{{ asset('assets/images/tarifs_rythme_danse.pdf') }}" target="_blank">Pour consulter le planning cliquez ici</a>
+    <div class="mx-auto">
+        <a class=" mt-3 text-white" href="{{ asset('assets/images/tarifs_rythme_danse.pdf') }}" target="_blank">Pour consulter le planning cliquez ici</a>
     </div>
 
 {% endblock %}

@@ -19,7 +19,9 @@
 
             <header>
                 <div>
-                    <img src="{{ asset('assets/images/logo_accueil.png') }}" alt="accueil">
+                    <a href="{{ path('accueil') }}">
+                        <img src="{{ asset('assets/images/logo_accueil.png') }}" alt="accueil">
+                    </a>      
                 </div>
             
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -54,8 +56,17 @@
                                 <li class="nav-item active">
                                     <a class="nav-link text-white" href="{{ path('contact') }}">Contact</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link text-white" href="{{ path('app_login') }}">Connexion</a>
+                                <li>                                
+                                    <div class="nav-link">
+                                       <a class="text-white" href="{{ path('app_login') }} ">Connexion</a>
+                                    </div>
+                                </li>
+                                <li>
+                                {% if app.user %}
+                                    <div class="nav-link">
+                                        Vous êtes connecter sur le compte de {{ app.user.username }}, <a class="text-white" href="{{ path('app_logout') }}">Déconnexion</a>
+                                    </div>
+                                {% endif %}
                                 </li>
                             </ul>
                         </div>
