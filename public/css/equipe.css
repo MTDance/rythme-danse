@@ -1,6 +1,3 @@
-h2{
-    text-align: center;
-}
 /**
 *   Page Equipe Artistique
 */
@@ -17,6 +14,10 @@ h2{
     margin-top: 20px
 }
 
+h2{
+    font-family: 'Berkshire Swash', cursive;
+}
+
 /**
 *   Page Equipe Administratif
 */
@@ -28,6 +29,12 @@ h2{
 .la-user-tie{
     font-size: 10em;
 }
+
+i{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
 
 @media all and (max-width: 800px){
     .container{
