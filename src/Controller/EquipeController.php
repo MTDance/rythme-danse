@@ -27,4 +27,23 @@ class EquipeController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/isabelle", name="isabelle")
+     */
+    public function isabelle()
+    {
+        return $this->render('equipe/isabelle.html.twig', [
+            'controller_name' => 'EquipeController',
+        ]);
+    }
+
+    /**
+     * @Route("/tchad", name="tchad")
+     */
+    public function tchad()
+    {
+        return $this->render('equipe/tchad.html.twig', [
+            'controller_name' => 'EquipeController',
+        ]);
+    }
 }
