@@ -5,6 +5,7 @@
 {% block body %}
     <h1>Inscription</h1>
 
+    <!-- Affichage des messages d'erreur -->
     {% for flashError in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
     {% endfor %}
@@ -20,5 +21,9 @@
 
         <button type="submit" class="btn">S'inscrire</button>
     {{ form_end(registrationForm) }}
+
+    {#Block mi envento#}
+
+
 {% endblock %}
 
