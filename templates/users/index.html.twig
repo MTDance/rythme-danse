@@ -1,0 +1,23 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Hello UsersController!
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+    <div><h2>Profil de {{ app.user.firstname}} {{ app.user.name }}</h2></div>
+		<div class="row row-cols-2">
+        
+			<div class="col">Nom</div>
+			<div class="col">{{ app.user.name }}</div>
+			<div class="col">Prénom</div>
+			<div class="col">{{ app.user.firstname }}</div>
+            <div class="col">Email: </div>
+			<div class="col">{{ app.user.email }}</div>
+            <div>
+                <button type="button" class="btn btn-primary">Modifier le profil</button>
+                <button type="button" class="btn btn-primary">Modifier le mot de passe</button>
+            </div>
+		</div>
+	</div>
+{% endblock %}
