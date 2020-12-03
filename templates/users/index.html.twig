@@ -32,10 +32,8 @@
 			</div>
 			<div class="col">{{ app.user.email }}</div>
 			<div>
-				<button type="button" class="btn btn-primary">
-					<a href="{{ path('users_profil_modifier' )}} ">Modifier le profil</a>
-				</button>
-				<button type="button" class="btn btn-primary">Modifier le mot de passe</button>
+				<a href="{{ path('users_profil_modifier' )}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Modifier le profil</a>
+				<a href="{{ path('users_pass_modifier')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Modifier le mot de passe</a>
 			</div>
 		</div>
 	</div>

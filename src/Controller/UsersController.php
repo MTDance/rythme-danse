@@ -6,6 +6,7 @@ use App\Form\EditProfileType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 
 class UsersController extends AbstractController
@@ -39,6 +40,15 @@ class UsersController extends AbstractController
         }
 
         return $this->render('users/editprofile.html.twig', [ 'form' => $form->createView(),]);
+    }
+
+    /**
+     *  concerne le boutton modifier le mot de passe
+     * @Route("/users/pass/modifier", name="users_pass_modifier")
+     */
+    public function editPass(Request $request, UserPasswordEncoderInterface $passwordEncoder)
+    {
+        return $this->render('users/editpass.html.twig');
     }
    
 }
