@@ -17,5 +17,13 @@ class BaseController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/connexion", name="connexion")
+     */
+    public function connexion()
+    {
+        return $this->render('users.html.twig');
+    }
+
    
 }
