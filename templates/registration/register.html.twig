@@ -1,26 +1,34 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Rythme-Danse{% endblock %}
-
-{% block body %}
-    <h1>Inscription</h1>
-
-    <!-- Affichage des messages d'erreur -->
-    {% for flashError in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
-    {% endfor %}
-
-    
-
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-
-        <button type="submit" class="btn">S'inscrire</button>
-    {{ form_end(registrationForm) }}
-
+{% block title %}Rythme-Danse
 {% endblock %}
 
+{% block body %}
+	
+
+	<h1>Inscription</h1>
+
+	<div class="mx-auto mt-5" style="width: 500px;">
+		<div class="mx-auto mb-2" style="width: 300px;"><h2 class="text-white">Pourquoi s'inscrire?</h2></div>
+
+		<p>Le fait de s'inscrire sur notre site permets de facilité la gestion de communication ainsi que la gestion réglement.</p>
+		<p>Rythme Danse s'engage d'être présent auprès de nos adhérents</p>
+	
+
+	<!-- Affichage des messages d'erreur -->
+	{% for flashError in app.flashes('verify_email_error') %}
+		<div class="alert alert-danger" role="alert">{{ flashError }}</div>
+	{% endfor %}
+
+
+	{{ form_start(registrationForm) }}
+	{{ form_row(registrationForm.email) }}
+	{{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+	{{ form_row(registrationForm.agreeTerms) }}
+
+	<button type="submit" class="btn">S'inscrire</button>
+	{{ form_end(registrationForm) }}
+</div>
+{% endblock %}

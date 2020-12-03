@@ -16,4 +16,5 @@ class PlanningController extends AbstractController
             'controller_name' => 'PlanningController',
         ]);
     }
+
 }

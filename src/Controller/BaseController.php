@@ -17,13 +17,5 @@ class BaseController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/accueil_event", name="accueil_event")
-     */
-    public function accueil_event()
-    {
-        return $this->render('base/accueil_event.html.twig', [
-            'controller_name' => 'BaseController',
-        ]);
-    }
+   
 }
