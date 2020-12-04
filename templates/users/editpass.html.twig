@@ -15,19 +15,19 @@
 		</div>
 	{% endfor %}
 		<div>
-			<h2>Modification du mot de passe de
+			<h1>Modification du mot de passe de
 				{{ app.user.firstname}}
-				{{ app.user.name }}</h2>
+				{{ app.user.name }}</h1>
 			<form method="post">
                 <div class="form-group">
-                    <label for="pass">Mot de passe</label>
+                    <label class="text-white" for="pass">Nouveau mot de passe</label>
                     <input type="password" id="pass" name="pass" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="pass2">Confirmer le mot de passe</label>
+                    <label class="text-white" for="pass2">Confirmer le nouveau mot de passe</label>
                     <input type="password" id="pass2" name="pass2" class="form-control" >
                 </div>
-                <button>Valider</button>
+                <button class="btn btn-dark">Valider</button>
             </form>
 			</div>
 		</div>

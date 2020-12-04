@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block body %}
-	{# message d'alerte pour succes de changement de nom et prénom #}
 
+	{# message d'alerte pour succes de changement de nom et prénom #}
 	{% for message in app.flashes('message')%}
 		<div>
 			<div class="alert alert-success" role="alert">
@@ -18,9 +18,9 @@
 
 	<div class="container">
 		<div>
-			<h2>Profil de
+			<h1>Profil de
 				{{ app.user.firstname}}
-				{{ app.user.name }}</h2>
+				{{ app.user.name }}</h1>
 		</div>
 		<div class="row row-cols-2">
 
@@ -32,8 +32,8 @@
 			</div>
 			<div class="col">{{ app.user.email }}</div>
 			<div>
-				<a href="{{ path('users_profil_modifier' )}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Modifier le profil</a>
-				<a href="{{ path('users_pass_modifier')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Modifier le mot de passe</a>
+				<a href="{{ path('users_profil_modifier' )}}" class="btn btn-dark btn-lg active mt-2 mr-2" role="button" aria-pressed="true">Modifier le profil</a>
+				<a href="{{ path('users_pass_modifier')}}" class="btn btn-dark btn-lg active mt-2 mr-2" role="button" aria-pressed="true">Modifier le mot de passe</a>
 			</div>
 		</div>
 	</div>
