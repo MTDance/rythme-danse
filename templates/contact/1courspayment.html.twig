@@ -1,0 +1,29 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Rythme Danse{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+
+<table class="table table-bordered ">
+	<h1>Tarifs pour 1 cours</h1>
+
+		<tbody>
+			<th scope="row"></th>
+			<td colspan="2" class="text-white">Enfants/Etudiants</td>
+			<td class="text-white">Adultes</td>
+			</tr>
+			<th scope="row" class="text-white">1 cours</th>
+			<td colspan="2" class="text-white">29€/mois soit 290€/an 
+      <a class="btn btn-primary" href="{{ path('1courspayment_enfant') }}" role="button">Accéder à ce tarif</a>
+      </td>
+			<td class="text-white">35€/mois soit 350€/an 
+      <a class="btn btn-primary" href="{{ path('1courspayment_adulte') }}" role="button">Accéder à ce tarif</a>
+      </td>
+			</tr>
+		</tbody>
+	</table>
+
+    
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Rythme Danse
+{% endblock %}
+
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
+
+{% block body %}
+<div class="mx-auto mt-4" style="width: 200px;">
+        <h2>EVEIL CORPOREL</h2>
+    </div>
+
+    <div>
+        <p>Les enfants ont d'énormes potentialités, encore faut-il qu'elles puissent s'exprimer par le biais d'un canal spécifique. L'eveil corporel répond parfaitement à cette demande d'autant plus qu'il peut être qualifié de spontané, dirigé, éducatif et ludique.</p>
+        <p>Il laisse ainsi une grande liberté à l'acte pédagogique et offre l'avantage d'être à la base de nombreux apprentissages corporels qui pourront être exploités ultérieurement et ce, quel que soit l'activité physique envisagée.</p>
+        <p>L'éveil pour les 4/6 ans peut être défini comme un ensemble d'activités d'éveil psychomoteur qui répond aux différents besoins de l'enfant : recherche d'autonomie, développement des capacités d'adaptation, de coopération et de socialisation, de motricité globale (marcher, courir, sauter, ramper, lancer, se tenir en équilibre..)et de coordination motrice ( se déplacer sur un support musical ou rythmique, participer à des jeux dansés...).</p>
+        <p>Cette éducation corporelle se déroule dans un milieu sécurisant, au travers de situations abordées par le jeu et le plaisir, dans le respect des différentes étapes du développement de l'enfant.</p>
+    </div>
+
+<div class="card mb-3">
+  <div class="row">
+    <div class="col mt-5">
+        <img src="{{ asset('assets/images/classique.png') }}" alt="classique">
+    </div>
+    <div class="col mr-5">
+      <div class="card-body">
+        <h2>Eveil</h2>
+        <p class="card-text">Les enfants ont d'énormes potentialités, encore faut-il qu'elles puissent s'exprimer par le biais d'un canal spécifique. L'eveil corporel répond parfaitement à cette demande d'autant plus qu'il peut être qualifié de spontané, dirigé, éducatif et ludique.</p>
+        <p class="card-text">Il laisse ainsi une grande liberté à l'acte pédagogique et offre l'avantage d'être à la base de nombreux apprentissages corporels qui pourront être exploités ultérieurement et ce, quel que soit l'activité physique envisagée.</p>
+        <p class="card-text">L'éveil pour les 4/6 ans peut être défini comme un ensemble d'activités d'éveil psychomoteur qui répond aux différents besoins de l'enfant : recherche d'autonomie, développement des capacités d'adaptation, de coopération et de socialisation, de motricité globale (marcher, courir, sauter, ramper, lancer, se tenir en équilibre..)et de coordination motrice ( se déplacer sur un support musical ou rythmique, participer à des jeux dansés...).</p>
+        <p class="card-text">Cette éducation corporelle se déroule dans un milieu sécurisant, au travers de situations abordées par le jeu et le plaisir, dans le respect des différentes étapes du développement de l'enfant.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<table class="table table-bordered ">
+		<tbody>
+			<th scope="row"></th>
+			<td colspan="2" class="text-white">Enfants/Etudiants</td>
+			<td class="text-white">Adultes</td>
+			</tr>
+			<th scope="row" class="text-white">Eveil</th>
+			<td colspan="2" class="text-white">21,5€/mois soit 215€/an</td>
+			<td><button id="checkout-button">Accéder au paiemment</button></td>
+			</tr>
+		</tbody>
+	</table>
+	
+
+{% endblock %}
+
+{% block javascripts %}
+{# Appel à l'API de stripe #}
+    <script type="text/javascript">
+      // Create an instance of the Stripe object with your publishable API key
+	  // Changer la clé publique ici
+      var stripe = Stripe('pk_test_51HtCJ1JN4HFVflDjk4WQObKMoWYGnein0Z3pnWdxGmh1ZJA749dxQZQ6TUjzm00rm8ywQ1qkxbrtdkkyJcEDmE9E00C1pSPFrD');
+      var checkoutButton = document.getElementById('checkout-button');
+
+      checkoutButton.addEventListener('click', function() {
+        // Create a new Checkout Session using the server-side endpoint you
+        // created in step 3.
+        fetch('/create-checkout-session', {
+          method: 'POST',
+        })
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(session) {
+          return stripe.redirectToCheckout({ sessionId: session.id });
+        })
+        .then(function(result) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, you should display the localized error message to your
+          // customer using `error.message`.
+          if (result.error) {
+            alert(result.error.message);
+          }
+        })
+        .catch(function(error) {
+          console.error('Error:', error);
+        });
+      });
+    </script>
+{% endblock %}
