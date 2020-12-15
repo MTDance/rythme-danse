@@ -1,0 +1,93 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Rythme Danse
+{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/equipe.css') }}">
+
+{% endblock %}
+{% block body %}
+
+	<h1>Equipe Artististique</h1>
+
+{# le vrai est ici #}
+<div class="row row-cols-1 row-cols-md-2 mr-2 ml-2">
+	<div class="col mb-4 mt-4">
+		<div class="card">
+			<h2 class="card-title mt-2 mb-2 text-white">Isabelle Farnault</h2>
+			<img
+			src="{{ asset('assets/images/isa2.jpg') }}" alt="isabelle" class="mx-auto">
+			{#<i class="las la-user-tie text-white"></i>#}
+			<div class="card-body">
+
+				<p class="card-text mt-0 mb-0 text-white">Professeur de danse:</p>
+				<p class="card-text mt-0 mb-0 text-white">Classique et Pointes</p>
+				<p class="card-text mt-0 mb-0 text-white">ModernJazz</p>
+				<p class="card-text mt-0 mb-0 text-white">Fly Yoga</p>
+				<p class="card-text mt-0 mb-0 text-white">Contemporain</p>
+				<button type="button" class="btn btn-dark mt-4"><a href="{{ path('isabelle') }}">Information sur l'artiste</a></button>
+				<div>
+					<a class="card-text small mt-2 mb-0 text-white" href="https://www.facebook.com/shanesia.farnault" target="_blank" title="Facebook">
+						<i class="lab la-facebook"></i>
+					</a>
+					<a href="https://www.instagram.com/shanesia.f/?hl=fr" target="_blank" title="Instagram">
+						<i class="lab la-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col mb-4 mt-4">
+		<div class="card">
+			<h2 class="card-title mt-2 mb-2 text-white">Tchad Mikael Rocle</h2>
+			<img
+			src="{{ asset('assets/images/tchad.jpg') }}" alt="tchad" class="mx-auto">
+			{#<i class="las la-user-tie text-white"></i>#}
+			<div class="card-body">
+				<p class="card-text mt-0 mb-0 text-white">Professeur de danse:</p>
+				<p class="card-text mt-0 mb-0 text-white">Hip-Hop</p>
+				<p class="card-text mt-0 mb-0 text-white">Ragga</p>
+				<button type="button" class="btn btn-dark mt-4"><a href="{{ path('tchad') }}">Information sur l'artiste</a></button>
+				<div>
+					<a class="card-text small mt-2 mb-0 text-white" href="https://www.facebook.com/mike.sonofbeach" target="_blank" title="Facebook">
+						<i class="lab la-facebook"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col mb-4 mt-4">
+		<div class="card">
+			<h2 class="card-title mt-2 mb-2 text-white">Cie Ethnica</h2>
+			<img
+			src="{{ asset('assets/images/ethnica1.jpg') }}" alt="ethnica" class="mx-auto">
+			{#<i class="las la-user-tie text-white"></i>#}
+			<div class="card-body">
+				<p class="card-text mt-0 mb-0 text-white">Compagnie crée par Isabelle Farnault</p>
+				<div>
+					<a class="card-text small mt-2 mb-0 text-white" href="https://www.facebook.com/CieEthnicaTribalfusion" target="_blank" title="Facebook">
+						<i class="lab la-facebook"></i>
+					</a>
+					<a href="https://www.instagram.com/ethnicacompagnie/?hl=fr" target="_blank" title="Instagram">
+						<i class="lab la-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col mb-4 mt-4">
+		<div class="card">
+			<h2 class="card-title mt-2 mb-2 text-white">Cie TBC Avalanche</h2>
+			<img
+			src="{{ asset('assets/images/tbc.jpg') }}" alt="tbc" class="mx-auto">
+			{#<i class="las la-user-tie text-white"></i>#}
+			<div class="card-body">
+				<p class="card-text mt-0 mb-0 text-white">Compagnie crée par Tchad</p>
+				<button type="button" class="btn btn-dark mt-4"><a href="{{ path('tbc') }}">Information sur la compagnie</a></button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+{% endblock %}

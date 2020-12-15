@@ -16,4 +16,14 @@ class EvenementController extends AbstractController
             'controller_name' => 'EvenementController',
         ]);
     }
+
+    /**
+     * @Route("/evenement_users", name="evenement_users")
+     */
+    public function evenement_users()
+    {
+        return $this->render('evenement/evenement_users.html.twig', [
+            'controller_name' => 'EvenementController',
+        ]);
+    }
 }

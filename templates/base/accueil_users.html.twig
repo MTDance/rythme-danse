@@ -1,0 +1,36 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Rythme Danse{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/accueil.css') }}">{% endblock %}
+{% block body %}
+
+    
+
+<div class="presentation">
+    {% for message in app.flashes('success') %}
+                    <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% endfor %}
+    
+    <h2 class="mx-auto">Présentation de l'association</h2>
+<div class="text-center">
+    <p>La cohésion, l'aventure, le dépassement de soi, le don de soi sont les maîtres mots de notre association.</p>
+
+    <p>Rythme Danse développe un enseignement de qualité, des créations chorégraphiques croisant les esthétiques.</p>
+
+    <p>Nous mettons la danse au service de la personne en favorisant la cohésion de groupe ainsi que le plaisir  au sein d’une communauté d’élèves partageant les mêmes valeurs.</p>
+
+    <p>Nos cours sont ouverts à tous quel que soit le niveau de pratique, les seuls prérequis sont : la motivation, la générosité.</p>
+
+    <p>Notre ambition est d'offrir à tout un chacun un espace d'expression, un espace d'apprentissage, un espace où la danse dans son ensemble demeure un réel outil de connexion et de partage.</p>
+
+    <p>Rythme Danse est une structure associative Figeacoise de loi qui a été fondée le 1er avril 1985 sous l'impulsion d'Isabelle Farnault, Tchad et de son équipe.<p>
+
+    <p>Depuis la création de notre structure notre champ d'action s'est considérablement élargi allant de la structure privée à la structure institutionnelle.</p>
+
+    <p>L’enseignement que nous dispensons, ainsi que notre démarche artistique met l’accent sur la poésie, la théâtralité, la sublimation de la réalité mais aussi le développement de l’imaginaire par le biais d’ateliers chorégraphiques et de cours techniques.</p>
+
+    <p>L'authenticité est une constante pour notre association ainsi nos cours sont de niveau unique de manière à favoriser la progression, la responsabilité et le lien social.</p>
+    </div>
+</div>
+{% endblock %}
+

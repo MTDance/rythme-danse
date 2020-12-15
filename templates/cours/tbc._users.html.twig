@@ -1,0 +1,22 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Rythme Danse{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
+{% block body %}
+
+<div class="cardi mb-3 mx-auto">
+  <div class="row mx-auto">
+
+        <img src="{{ asset('assets/images/hip_hop.png') }}" alt="accueuil" class="mt-5 mx-auto ">
+ 
+    <div class="col mr-5">
+      <div class="card-body">
+        <h2>TBC Avalanche</h2>
+        <p class="card-text">TBC AVALANCHE est un atelier chorégraphique permettant d'intégrer la scène à l'expérience de l'association. Le but premier est de mettre en scène la diversité des élèves et des styles de danse de l'association.</p>
+        <p class="card-text">Les bases de travail sont l'improvisation, le battle (affrontement dansé), et l'appréhension de la plupart des styles de danse (hip-hop, ragga, contemporain, jazz, classique, salsa, oriental, expérimental, afro... ) avec une mise en scène type show contemporain/hip-hop.</p>
+        <p class="card-text">Intégration sur entretien, il est recommandé d'avoir minimum un an de danse et de suivre au moins un cours autre que celui-ci. Un entraînement régulier sur les bases enseignées est également conseillé.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

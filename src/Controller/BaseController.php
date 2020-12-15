@@ -18,6 +18,16 @@ class BaseController extends AbstractController
     }
 
     /**
+     * @Route("/accueil_users", name="accueil_users")
+     */
+    public function accueil_users()
+    {
+        return $this->render('base/accueil_users.html.twig', [
+            'controller_name' => 'BaseController',
+        ]);
+    }
+
+    /**
      * @Route("/connexion", name="connexion")
      */
     public function connexion()

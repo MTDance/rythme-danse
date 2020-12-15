@@ -1,0 +1,60 @@
+{% extends 'users.html.twig' %}
+
+{% block title %}Rythme Danse{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/cours.css') }}">{% endblock %}
+{% block body %}
+
+    <h1>Cours</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 mx-auto">
+            <div class="col mb-4 ">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/classique.png') }}" alt="classique">
+                            <div class="card-body mx-auto">
+                                <button><a class="dropdown-item" href="{{ path('classique') }}">Classique et pointes</a></button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                    <img src="{{ asset('assets/images/contemporain.png') }}" alt="contemporain">
+                    <div class="card-body mx-auto">
+                        <button><a class="dropdown-item" href="{{ path('contemporain') }}">Contemporain</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                    <img src="{{ asset('assets/images/modern_jazz.png') }}" alt="modern_jazz">
+                    <div class="card-body mx-auto">
+                        <button><a class="dropdown-item" href="{{ path('modern') }}">Modern Jazz</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                    <img src="{{ asset('assets/images/hip_hop.png') }}" alt="hip_hop">
+                    <div class="card-body mx-auto">
+                        <button><a class="dropdown-item" href="{{ path('hip_hop') }}">Hip-Hop</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                    <img src="{{ asset('assets/images/yoga.png') }}" alt="yoga">
+                    <div class="card-body mx-auto">
+                        <button><a class="dropdown-item" href="{{ path('yoga') }}">Fly Yoga</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                    <img src="{{ asset('assets/images/ragga.png') }}" alt="ragga">
+                    <div class="card-body mx-auto">
+                        <button><a class="dropdown-item" href="{{ path('ragga') }}">Ragga</a></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

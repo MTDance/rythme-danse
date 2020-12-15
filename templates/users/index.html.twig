@@ -24,14 +24,14 @@
 		</div>
 		<div class="row row-cols-2">
 
-			<div class="col">Nom</div>
-			<div class="col">{{ app.user.name }}</div>
-			<div class="col">Prénom</div>
-			<div class="col">{{ app.user.firstname }}</div>
-			<div class="col">Email:
+			<div class="col-5 mx-auto">Nom:</div>
+			<div class="col-5 mx-auto">{{ app.user.name }}</div>
+			<div class="col-5 mx-auto">Prénom:</div>
+			<div class="col-5 mx-auto">{{ app.user.firstname }}</div>
+			<div class="col-5 mx-auto">Email:
 			</div>
-			<div class="col">{{ app.user.email }}</div>
-			<div>
+			<div class="col-5 mx-auto">{{ app.user.email }}</div>
+			<div class="mx-auto">
 				<a href="{{ path('users_profil_modifier' )}}" class="btn btn-dark btn-lg active mt-2 mr-2" role="button" aria-pressed="true">Modifier le profil</a>
 				<a href="{{ path('users_pass_modifier')}}" class="btn btn-dark btn-lg active mt-2 mr-2" role="button" aria-pressed="true">Modifier le mot de passe</a>
 			</div>

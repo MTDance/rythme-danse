@@ -24,40 +24,40 @@
 
 		<header>
 			<div>
-				<a href="{{ path('accueil') }}">
+				<a href="{{ path('accueil_users') }}">
 					<img src="{{ asset('assets/images/logo_accueil.png') }}" alt="accueil">
 				</a>
 			</div>
 
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand text-white" href="{{ path('accueil') }}">Entrez dans la Danse</a>
+				<a class="navbar-brand text-white" href="{{ path('accueil_users') }}">Entrez dans la Danse</a>
 				<button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							<a class="nav-link text-white" href="{{ path('accueil') }}">Accueil
+							<a class="nav-link text-white" href="{{ path('accueil_users') }}">Accueil
 							</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link text-white" href="{{ path('cours') }}">Cours
+							<a class="nav-link text-white" href="{{ path('cours_users') }}">Cours
 							</a>
 						</li>
 
 						<li class="nav-item active">
-							<a class="nav-link text-white" href="{{ path('planning') }}">Planning</a>
+							<a class="nav-link text-white" href="{{ path('planning_users') }}">Planning</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link text-white" href="{{ path('evenement') }}">Evènement</a>
+							<a class="nav-link text-white" href="{{ path('evenement_users') }}">Evènement</a>
 						</li>
 						<li class="nav-item active dropdown">
 							<a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								L'équipe
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="{{ path('administratif') }}">L'équipe Administratif</a>
-								<a class="dropdown-item" href="{{ path('artistique') }}">L'équipe Artistique</a>
+								<a class="dropdown-item" href="{{ path('administratif_users') }}">L'équipe Administratif</a>
+								<a class="dropdown-item" href="{{ path('artistique_users') }}">L'équipe Artistique</a>
 							</div>
 						</li>
 						<li class="nav-item active">

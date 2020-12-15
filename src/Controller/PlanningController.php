@@ -17,4 +17,14 @@ class PlanningController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/planning_users", name="planning_users")
+     */
+    public function planning_users()
+    {
+        return $this->render('planning/planning_users.html.twig', [
+            'controller_name' => 'PlanningController',
+        ]);
+    }
+
 }
