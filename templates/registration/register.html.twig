@@ -5,13 +5,12 @@
 
 {% block body %}
 	
-
 	<h1>Inscription</h1>
 
 	<div class="mx-auto mt-5" style="width: 500px;">
 		<div class="mx-auto mb-2" style="width: 300px;"><h2 class="text-white">Pourquoi s'inscrire?</h2></div>
 
-		<p>Le fait de s'inscrire sur notre site permets de facilité la gestion de communication ainsi que la gestion réglement.</p>
+		<p>Le fait de s'inscrire sur notre site permet de facilité la gestion de communication ainsi que la gestion réglement.</p>
 		<p>Rythme Danse s'engage d'être présent auprès de nos adhérents</p>
 	
 
@@ -24,13 +23,13 @@
 	{{ form_start(registrationForm) }}
 	{{ form_row(registrationForm.email) }}
 	{{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
+            label: 'Mot de passe'
         }) }}
 	{{ form_row(registrationForm.name) }}
 	{{ form_row(registrationForm.firstname) }}
 	{{ form_row(registrationForm.agreeTerms) }}
 
-	<button type="submit" class="btn">S'inscrire</button>
+	<button type="submit" class="btn btn-dark">S'inscrire</button>
 	{{ form_end(registrationForm) }}
 	
 </div>
