@@ -1,13 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Log in!{% endblock %}
+{% block title %}Connexion{% endblock %}
 
 {% block body %}
 <form method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
-
 
     <h1 class="h3 mb-3 font-weight-normal">Veuillez vous connectez</h1>
     <label class="text-white mt-3 ml-5" for="inputEmail">Votre Email</label>
@@ -30,13 +29,11 @@
         </div>
     #}
 
-    
-    <button>Se connecter</button>
+    <button class="mt-4 ml-5 btn btn-dark">Se connecter</button>
 
-    
 </form>
     <div>
-        <a class="text-white mt-3 ml-5" href="{{ path('app_forgot_password_request') }}">Mot de passe oublié?</a>
+        <a class="text-white mt-4 ml-5" href="{{ path('app_forgot_password_request') }}">Mot de passe oublié?</a>
     </div>
 
 <div class="mx-auto mb-5" style="width: 300px;">
