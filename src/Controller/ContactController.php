@@ -193,7 +193,7 @@ class ContactController extends AbstractController
         // installation de la clé privée
         \Stripe\Stripe::setApiKey('sk_test_51HtCJ1JN4HFVflDj73HeHqZAry5HfOT6cD5ZuRkRHi2GaAjmhU6sqbQofir3nDKbTR44drcjaBtYJ9QOxK69omti00DgkmSOly');
 
-        // ce bout de code veut savor ce qu'on veut dans notre paiement
+        // ce bout de code veut savoir ce qu'on veut dans notre paiement
         $session = \Stripe\Checkout\Session::create([
             'payment_method_types' => ['card'],
             // Tout ce qui concerne le produit
