@@ -40,25 +40,12 @@ img{
     margin-left: auto;
 }
 
-h1{
-    font-size: 3em;
-    text-align: center;
-    position: relative;
-    font-family: 'Berkshire Swash', cursive;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color:#fafafa;
-}
-
-
-
 p{
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: cursive;
     color:white;
 }
-
 
 /* footer */
 footer>div {
